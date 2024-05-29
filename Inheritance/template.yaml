@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: "ami-067d1e60475437da2"
+      InstanceType: t2.micro
+      SecurityGroupIds:
+        - "sg-0c47ef1c5148b9f96"
+      KeyName: xdPair
